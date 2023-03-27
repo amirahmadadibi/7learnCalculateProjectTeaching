@@ -13,20 +13,25 @@ class MyWidget extends StatelessWidget {
       home: Scaffold(
         body: SafeArea(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Text(
-                'Text1',
-                style: TextStyle(fontSize: 20),
+              Expanded(
+                flex: 6,
+                child: Container(
+                  color: Colors.red,
+                ),
               ),
-              Text(
-                'Text2',
-                style: TextStyle(fontSize: 20),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  color: Colors.green,
+                ),
               ),
-              Text(
-                'Text3',
-                style: TextStyle(fontSize: 20),
-              ),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  color: Colors.blue,
+                ),
+              )
             ],
           ),
         ),
