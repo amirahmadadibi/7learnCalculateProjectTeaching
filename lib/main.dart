@@ -16,7 +16,9 @@ class MyWidget extends StatelessWidget {
             width: 100,
             height: 100,
             color: Colors.green,
-            child: Center(child: Text('7Learn')),
+            child: Center(
+              child: Image(image: AssetImage('images/logo.png')),
+            ),
           ),
         ),
       ),
