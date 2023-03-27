@@ -12,7 +12,12 @@ class MyWidget extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-            child: Text('7Learn AmirahmadAdibi'),
+          child: Container(
+            width: 100,
+            height: 100,
+            color: Colors.green,
+            child: Center(child: Text('7Learn')),
+          ),
         ),
       ),
     );
