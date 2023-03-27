@@ -13,13 +13,13 @@ class MyWidget extends StatelessWidget {
       home: Scaffold(
         body: Center(
             child: Container(
-          width: 300,
-          height: 300,
-          child: Center(
+          child: ElevatedButton(
+            onPressed: () {
+              print('click');
+            },
             child: Text(
-              'سون لرن',
-              style: TextStyle(
-                  fontSize: 38, fontFamily: 'vazir', color: Colors.blue),
+              'اضافه کردن به سبد خرید',
+              style: TextStyle(fontFamily: 'vazir'),
             ),
           ),
         )),
