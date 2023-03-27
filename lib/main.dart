@@ -11,18 +11,25 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-            child: Container(
-          child: ElevatedButton(
-            onPressed: () {
-              print('click');
-            },
-            child: Text(
-              'اضافه کردن به سبد خرید',
-              style: TextStyle(fontFamily: 'vazir'),
-            ),
+        body: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Text(
+                'Text1',
+                style: TextStyle(fontSize: 20),
+              ),
+              Text(
+                'Text2',
+                style: TextStyle(fontSize: 20),
+              ),
+              Text(
+                'Text3',
+                style: TextStyle(fontSize: 20),
+              ),
+            ],
           ),
-        )),
+        ),
       ),
     );
   }
