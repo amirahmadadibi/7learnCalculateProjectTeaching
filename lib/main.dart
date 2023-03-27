@@ -13,11 +13,13 @@ class MyWidget extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: Container(
-            width: 100,
-            height: 100,
+            width: 300,
+            height: 300,
             color: Colors.green,
             child: Center(
-              child: Image(image: AssetImage('images/logo.png')),
+              child: Image(
+                  image: NetworkImage(
+                      'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg')),
             ),
           ),
         ),
