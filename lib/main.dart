@@ -19,6 +19,16 @@ class MyWidget extends StatelessWidget {
             child: Column(
           children: [
             Padding(
+              padding: EdgeInsets.all(20),
+              child: SizedBox(
+                width: 170,
+                height: 170,
+                child: Image(
+                  image: AssetImage('images/login.png'),
+                ),
+              ),
+            ),
+            Padding(
               padding: EdgeInsets.all(12),
               child: TextField(
                 decoration: InputDecoration(
