@@ -11,33 +11,14 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: SafeArea(
-          child: Column(
-            children: [
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.red,
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.blue,
-                padding: EdgeInsets.all(20),
-                child: Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.purple,
-                ),
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.green,
-              )
-            ],
-          ),
+        appBar: AppBar(
+          title: Text('Login To 7Learn'),
+          centerTitle: true,
         ),
+        body: SafeArea(
+            child: Center(
+          child: Text('login'),
+        )),
       ),
     );
   }
