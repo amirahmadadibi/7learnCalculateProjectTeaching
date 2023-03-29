@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -44,6 +46,18 @@ class MyWidget extends StatelessWidget {
                     hintText: 'Enter your password'),
               ),
             ),
+            Spacer(),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('login'),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Text('create an account'),
+            ),
+            SizedBox(
+              height: 20,
+            )
           ],
         )),
       ),
