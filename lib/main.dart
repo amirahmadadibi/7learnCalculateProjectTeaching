@@ -16,8 +16,25 @@ class MyWidget extends StatelessWidget {
           centerTitle: true,
         ),
         body: SafeArea(
-            child: Center(
-          child: Text('login'),
+            child: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.all(12),
+              child: TextField(
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Enter your username'),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(12),
+              child: TextField(
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Enter your password'),
+              ),
+            ),
+          ],
         )),
       ),
     );
