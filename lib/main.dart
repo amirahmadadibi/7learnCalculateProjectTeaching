@@ -14,23 +14,26 @@ class MyWidget extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
-              Expanded(
-                flex: 6,
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.red,
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.blue,
+                padding: EdgeInsets.all(20),
                 child: Container(
-                  color: Colors.red,
+                  width: 100,
+                  height: 100,
+                  color: Colors.purple,
                 ),
               ),
-              Expanded(
-                flex: 2,
-                child: Container(
-                  color: Colors.green,
-                ),
-              ),
-              Expanded(
-                flex: 2,
-                child: Container(
-                  color: Colors.blue,
-                ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.green,
               )
             ],
           ),
