@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -48,10 +46,12 @@ class MyWidget extends StatelessWidget {
             ),
             Spacer(),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(minimumSize: Size(300, 40)),
               onPressed: () {},
               child: Text('login'),
             ),
             OutlinedButton(
+              style: OutlinedButton.styleFrom(minimumSize: Size(300, 40)),
               onPressed: () {},
               child: Text('create an account'),
             ),
